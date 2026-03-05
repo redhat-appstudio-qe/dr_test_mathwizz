@@ -1,0 +1,142 @@
+/* Global styles for MathWizz with pixel art theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  image-rendering: pixelated;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 150px;
+}
+
+.page-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Pixel art buttons */
+.pixel-button {
+  background: #16213e;
+  border: 3px solid #0f3460;
+  color: #eee;
+  padding: 12px 24px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  image-rendering: pixelated;
+  box-shadow: 4px 4px 0px #0f3460;
+  transition: all 0.1s;
+}
+
+.pixel-button:hover {
+  background: #0f3460;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #0f3460;
+}
+
+.pixel-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #0f3460;
+}
+
+/* Pixel art input fields */
+.pixel-input {
+  background: #16213e;
+  border: 3px solid #0f3460;
+  color: #eee;
+  padding: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  image-rendering: pixelated;
+}
+
+.pixel-input:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+/* Error messages */
+.error-message {
+  color: #e94560;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-left: 3px solid #e94560;
+  padding-left: 10px;
+}
+
+/* Success messages */
+.success-message {
+  color: #4ecca3;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-left: 3px solid #4ecca3;
+  padding-left: 10px;
+}
+
+/* Navigation */
+.nav-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: #16213e;
+  border: 2px solid #0f3460;
+  color: #eee;
+  padding: 8px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.nav-button:hover {
+  background: #0f3460;
+}
+
+.nav-button.active {
+  background: #e94560;
+  border-color: #e94560;
+}
+
+/* Titles */
+h1, h2, h3 {
+  color: #e94560;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px #0f3460;
+  image-rendering: pixelated;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}

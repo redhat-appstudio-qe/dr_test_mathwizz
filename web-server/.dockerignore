@@ -1,0 +1,30 @@
+# Test files
+*_test.go
+suite_test.go
+test_helpers.go
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+web-server
+
+# Test coverage
+*.out
+coverage.html

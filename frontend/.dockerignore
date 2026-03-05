@@ -1,0 +1,31 @@
+# Node modules
+node_modules
+npm-debug.log*
+
+# Testing
+coverage
+e2e
+playwright-report
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Build artifacts
+build
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Documentation
+README.md
+*.md
