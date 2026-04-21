@@ -13,11 +13,11 @@ metadata:
       || "history-worker/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: moshekipod-same-version-dr
+    appstudio.openshift.io/application: kokohazamar-backwards-compat-dr
     appstudio.openshift.io/component: mathwizz-history-worker
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-history-worker-on-pull-request
-  namespace: dr-test-moshekipod-same-version-dr
+  namespace: dr-test-kokohazamar-backwards-compat-dr
 spec:
   params:
   - name: git-url
@@ -25,7 +25,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-same-version-dr/mathwizz-history-worker:on-pr-{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-kokohazamar-backwards-compat-dr/mathwizz-history-worker:on-pr-{{revision}}
   - name: image-expires-after
     value: 6h
   - name: dockerfile
@@ -493,7 +493,7 @@ spec:
         - name: name
           value: rpms-signature-scan
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-rpms-signature-scan:0.2@sha256:65b14e54b86c3b8e7332b53ff8d2e574693fa1335f9720aec21d47e9d15686f0
+          value: quay.io/konflux-ci/tekton-catalog/task-rpms-signature-scan:0.2@sha256:b2224a0442ac705e20a25b8609e1760321d9d86da7901fd0392a90102688e37d
         - name: kind
           value: task
         resolver: bundles
