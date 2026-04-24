@@ -13,11 +13,11 @@ metadata:
       || "web-server/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: moshekipod-backwards-compat-dr
+    appstudio.openshift.io/application: moshekipod-same-version-dr
     appstudio.openshift.io/component: mathwizz-web-server
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-web-server-on-pull-request
-  namespace: dr-test-moshekipod-backwards-compat-dr
+  namespace: dr-test-moshekipod-same-version-dr
 spec:
   params:
   - name: git-url
@@ -25,7 +25,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-backwards-compat-dr/mathwizz-web-server:on-pr-{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-same-version-dr/mathwizz-web-server:on-pr-{{revision}}
   - name: image-expires-after
     value: 6h
   - name: dockerfile
@@ -178,7 +178,7 @@ spec:
         - name: name
           value: prefetch-dependencies-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies-oci-ta:0.3@sha256:5aa530bb95fa77477dad200e4d5d8312ad8bfafef549957f19aa56f1428672fa
+          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies-oci-ta:0.3@sha256:1b209c0d93e52e418f3e6cd4b4fd915a84e4bd7f68e1cfd0d6446133540d7f43
         - name: kind
           value: task
         resolver: bundles
