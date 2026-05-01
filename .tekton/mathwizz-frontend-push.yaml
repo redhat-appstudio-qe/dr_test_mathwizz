@@ -12,11 +12,11 @@ metadata:
       || "frontend/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: kokohazamar-same-version-dr
+    appstudio.openshift.io/application: moshekipod-same-version-dr
     appstudio.openshift.io/component: mathwizz-frontend
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-frontend-on-push
-  namespace: dr-test-kokohazamar-same-version-dr
+  namespace: dr-test-moshekipod-same-version-dr
 spec:
   params:
   - name: git-url
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-kokohazamar-same-version-dr/mathwizz-frontend:{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-same-version-dr/mathwizz-frontend:{{revision}}
   - name: dockerfile
     value: frontend/Dockerfile
   - name: path-context
@@ -333,7 +333,7 @@ spec:
         - name: name
           value: ecosystem-cert-preflight-checks
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-ecosystem-cert-preflight-checks:0.2@sha256:2468c01818fbaad2235e4fca438f28e847260e3e354cf5a441bbd671684af2db
+          value: quay.io/konflux-ci/tekton-catalog/task-ecosystem-cert-preflight-checks:0.2@sha256:25dcef1d9270b2e03fe6710a733171f7c7208e341fc627dac3a579088f44af34
         - name: kind
           value: task
         resolver: bundles
