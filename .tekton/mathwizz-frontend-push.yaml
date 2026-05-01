@@ -12,11 +12,11 @@ metadata:
       || "frontend/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: moshekipod-backwards-compat-dr
+    appstudio.openshift.io/application: kokohazamar-backwards-compat-dr
     appstudio.openshift.io/component: mathwizz-frontend
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-frontend-on-push
-  namespace: dr-test-moshekipod-backwards-compat-dr
+  namespace: dr-test-kokohazamar-backwards-compat-dr
 spec:
   params:
   - name: git-url
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-backwards-compat-dr/mathwizz-frontend:{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-kokohazamar-backwards-compat-dr/mathwizz-frontend:{{revision}}
   - name: dockerfile
     value: frontend/Dockerfile
   - name: path-context
