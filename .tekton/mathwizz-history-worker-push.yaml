@@ -12,11 +12,11 @@ metadata:
       || "history-worker/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: moshekipod-same-version-dr
+    appstudio.openshift.io/application: kokohazamar-same-version-dr
     appstudio.openshift.io/component: mathwizz-history-worker
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-history-worker-on-push
-  namespace: dr-test-moshekipod-same-version-dr
+  namespace: dr-test-kokohazamar-same-version-dr
 spec:
   params:
   - name: git-url
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-same-version-dr/mathwizz-history-worker:{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-kokohazamar-same-version-dr/mathwizz-history-worker:{{revision}}
   - name: dockerfile
     value: history-worker/Dockerfile
   - name: path-context
