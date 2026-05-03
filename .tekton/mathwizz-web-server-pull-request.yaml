@@ -13,11 +13,11 @@ metadata:
       || "web-server/Dockerfile".pathChanged() )
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: kokohazamar-same-version-dr
+    appstudio.openshift.io/application: moshekipod-backwards-compat-dr
     appstudio.openshift.io/component: mathwizz-web-server
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-web-server-on-pull-request
-  namespace: dr-test-kokohazamar-same-version-dr
+  namespace: dr-test-moshekipod-backwards-compat-dr
 spec:
   params:
   - name: git-url
@@ -25,7 +25,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-appstudio-qe/dr-test-kokohazamar-same-version-dr/mathwizz-web-server:on-pr-{{revision}}
+    value: quay.io/redhat-appstudio-qe/dr-test-moshekipod-backwards-compat-dr/mathwizz-web-server:on-pr-{{revision}}
   - name: image-expires-after
     value: 6h
   - name: dockerfile
