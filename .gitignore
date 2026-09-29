@@ -1,0 +1,11 @@
+# Compiled Go binaries
+history-worker/history-worker
+history-worker/history-worker.test
+web-server/web-server
+web-server/web-server.test
+
+# Node
+frontend/node_modules/
+
+# OS
+.DS_Store
