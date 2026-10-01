@@ -33,3 +33,4 @@ COPY --from=builder /app/history-worker .
 
 # Run the binary
 CMD ["./history-worker"]
+# konflux-test trigger run-d135ccb0-274f-447d-a88d-29a92edfc5de 1790839452
