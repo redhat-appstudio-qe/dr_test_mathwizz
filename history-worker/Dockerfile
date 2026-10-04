@@ -35,3 +35,4 @@ COPY --from=builder /app/history-worker .
 CMD ["./history-worker"]
 # konflux-test trigger run-d135ccb0-274f-447d-a88d-29a92edfc5de 1790839452
 # konflux-test trigger run-dd44008f-7fd4-41ed-b1df-735ccbcaef2c 1791113681
+# konflux-test trigger run-3ad07b03-14af-4029-8e95-eaf0878cfe23 1791116990
