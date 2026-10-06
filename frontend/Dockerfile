@@ -60,3 +60,4 @@ CMD ["nginx", "-g", "daemon off;"]
 # konflux-test trigger run-c3abda7c-0c72-4821-81de-ce220a7f583d 1791215979
 # konflux-test trigger run-fe53789e-ee9c-4cc0-8d8f-456d670f2cf7 1791273430
 # konflux-test trigger run-a5d71963-3898-4991-9bbd-ae6d294a2341 1791273569
+# konflux-test trigger run-ec8dd773-9658-4720-8f7e-5cb3a02acce4 1791290240
