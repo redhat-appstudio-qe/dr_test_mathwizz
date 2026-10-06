@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: mathwizz-web-server
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-web-server-on-push
-  namespace: mathwizz-test-github
+  namespace: mathwizz-test-github-accept3
 spec:
   params:
   - name: git-url
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/mathwizz-test-github/mathwizz-web-server:{{revision}}
+    value: quay.io/redhat-user-workloads/mathwizz-test-github-accept3/mathwizz-web-server:{{revision}}
   - name: dockerfile
     value: web-server/Dockerfile
   pipelineSpec:
