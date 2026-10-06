@@ -14,7 +14,7 @@ metadata:
     appstudio.openshift.io/component: mathwizz-history-worker
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-history-worker-on-push
-  namespace: mathwizz-test-github
+  namespace: mathwizz-test-github-accept3
 spec:
   params:
   - name: git-url
@@ -22,7 +22,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/mathwizz-test-github/mathwizz-history-worker:{{revision}}
+    value: quay.io/redhat-user-workloads/mathwizz-test-github-accept3/mathwizz-history-worker:{{revision}}
   - name: dockerfile
     value: history-worker/Dockerfile
   pipelineSpec:
