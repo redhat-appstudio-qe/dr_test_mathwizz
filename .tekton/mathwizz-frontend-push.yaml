@@ -15,7 +15,7 @@ metadata:
     appstudio.openshift.io/component: mathwizz-frontend
     pipelines.appstudio.openshift.io/type: build
   name: mathwizz-frontend-on-push
-  namespace: mathwizz-test-github
+  namespace: mathwizz-test-github-rerun
 spec:
   params:
   - name: git-url
@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/mathwizz-test-github/mathwizz-frontend:{{revision}}
+    value: quay.io/redhat-user-workloads/mathwizz-test-github-rerun/mathwizz-frontend:{{revision}}
   - name: dockerfile
     value: Dockerfile
   - name: path-context
