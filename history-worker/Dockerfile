@@ -44,3 +44,4 @@ CMD ["./history-worker"]
 # konflux-test trigger run-a5d71963-3898-4991-9bbd-ae6d294a2341 1791273567
 # konflux-test trigger run-ec8dd773-9658-4720-8f7e-5cb3a02acce4 1791290238
 # konflux-test trigger run-228186f2-149e-4d0c-a207-da082c865e00 1791315859
+# konflux-test trigger run-0ad9bfde-b6b9-4381-afb3-8c30cee05671 1791319030
