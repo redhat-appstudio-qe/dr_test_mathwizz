@@ -7,7 +7,7 @@ toolchain go1.24.6
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
 	github.com/Knetic/govaluate v3.0.0+incompatible
-	github.com/golang-jwt/jwt/v5 v5.2.0
+	github.com/golang-jwt/jwt/v5 v5.2.2
 	github.com/gorilla/mux v1.8.1
 	github.com/lib/pq v1.10.9
 	github.com/nats-io/nats.go v1.32.0
