@@ -2,7 +2,7 @@ module github.com/mathwizz/web-server
 
 go 1.23.0
 
-toolchain go1.24.6
+toolchain go1.26.11
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
