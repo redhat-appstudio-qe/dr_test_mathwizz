@@ -2,7 +2,7 @@
 # Async worker that processes problem_solved events from NATS
 
 # Build stage
-FROM docker.io/library/golang:1.23-alpine AS builder
+FROM docker.io/library/golang:1.27-alpine AS builder
 
 WORKDIR /app
 
