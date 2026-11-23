@@ -2,7 +2,7 @@
 # React application with pixel art theme
 
 # Build stage
-FROM docker.io/library/node:20-alpine AS builder
+FROM docker.io/library/node:26-alpine AS builder
 
 WORKDIR /app
 
