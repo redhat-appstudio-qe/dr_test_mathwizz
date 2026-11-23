@@ -1,8 +1,6 @@
 module github.com/mathwizz/web-server
 
-go 1.23.0
-
-toolchain go1.24.6
+go 1.26.0
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
@@ -15,7 +13,7 @@ require (
 	github.com/onsi/gomega v1.36.2
 	github.com/testcontainers/testcontainers-go v0.28.0
 	golang.org/x/crypto v0.33.0
-	golang.org/x/time v0.3.0
+	golang.org/x/time v0.16.0
 )
 
 require (
