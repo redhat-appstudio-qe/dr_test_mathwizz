@@ -26,6 +26,7 @@ spec:
   - name: build-platforms
     value:
     - linux/arm64
+    - linux/s390x
   - name: output-image
     value: quay.io/redhat-user-workloads/mathwizz-test-github/mathwizz-web-server:{{revision}}
   - name: dockerfile
